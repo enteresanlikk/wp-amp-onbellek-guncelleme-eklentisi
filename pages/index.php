@@ -4,7 +4,7 @@
 ?>
 
 <div class="amp-cache-update">
-    <h1>AMP Cache Update</h1>
+    <h1>AMP Önbellek Güncelleme</h1>
     <?php if (!empty($pemKey)) { ?>
         <div class="amp-row">
             <label class="title" for="private_pem"><b>Private key</b> bilginiz</label>

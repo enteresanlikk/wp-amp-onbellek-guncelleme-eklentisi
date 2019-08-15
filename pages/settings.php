@@ -1,5 +1,5 @@
 <div class="amp-cache-update">
-    <h1>Settings</h1>
+    <h1>Ayarlar</h1>
 
     <?php
     if($_POST["action"] == "update") {
