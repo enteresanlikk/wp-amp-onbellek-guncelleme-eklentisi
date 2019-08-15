@@ -3,14 +3,13 @@
 //#region Menu
     add_action("admin_menu", "amp_c_u_add_menu");
     function amp_c_u_add_menu() {
-        global $amp_c_u_project_path;
         $config = array(
             "page_title" => "AMP Önbellek Güncelleme",
             "menu_title" => "AMP Önbellek Güncelleme",
             "capability" => "manage_options",
-            "menu_slug" => $amp_c_u_project_path."/pages/index.php",
+            "menu_slug" => AMP_C_U_PLUGIN_FOLDER."/pages/index.php",
             "function" => "",
-            "icon_url" => plugins_url($amp_c_u_project_path."/assets/img/icon.png" ),
+            "icon_url" => plugins_url(AMP_C_U_PLUGIN_FOLDER."/assets/img/icon.png" ),
             "position" => 65,
 
             "submenus" => array(
@@ -18,7 +17,7 @@
                     "page_title" => "Ayarlar - AMP Önbellek Güncelleme",
                     "menu_title" => "Ayarlar",
                     "capability" => "manage_options",
-                    "menu_slug" => $amp_c_u_project_path."/pages/settings.php",
+                    "menu_slug" => AMP_C_U_PLUGIN_FOLDER."/pages/settings.php",
                     "function" => "",
                 )
             )
@@ -36,16 +35,14 @@
 //#region Settings
     add_action("admin_init", "amp_c_u_plugin_settings");
     function amp_c_u_plugin_settings() {
-        global $amp_c_u_project_path;
-
-        register_setting($amp_c_u_project_path, "amp_c_u_private_pem");
-        register_setting($amp_c_u_project_path, "amp_w_cdn_url");
+        register_setting(AMP_C_U_PLUGIN_FOLDER, "amp_c_u_private_pem");
+        register_setting(AMP_C_U_PLUGIN_FOLDER, "amp_w_cdn_url");
 
         //CSS
-        wp_enqueue_style($amp_c_u_project_path, plugins_url($amp_c_u_project_path."/assets/css/style.css" ));
+        wp_enqueue_style(AMP_C_U_PLUGIN_FOLDER, plugins_url(AMP_C_U_PLUGIN_FOLDER."/assets/css/style.css" ));
 
         //JS
-        wp_enqueue_script($amp_c_u_project_path, plugins_url($amp_c_u_project_path."/assets/js/metabox/index.js" ));
+        wp_enqueue_script(AMP_C_U_PLUGIN_FOLDER, plugins_url(AMP_C_U_PLUGIN_FOLDER."/assets/js/metabox/index.js" ));
     }
 //#endregion
 

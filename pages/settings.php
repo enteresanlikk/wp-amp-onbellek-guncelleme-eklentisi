@@ -3,7 +3,7 @@
 
     <?php
     if($_POST["action"] == "update") {
-        if(!isset($_POST["amp-cache-update"]) || !wp_verify_nonce($_POST["amp-cache-update"], "amp-cache-update")) {
+        if(!isset($_POST[PLUGIN_FOLDER]) || !wp_verify_nonce($_POST[PLUGIN_FOLDER], PLUGIN_FOLDER)) {
             show_custom_message("Ayarlar kaydedilirken hata oluştu!", "error");
         } else {
             $pem = $_POST["amp_c_u_private_pem"];
@@ -19,7 +19,7 @@
 
     <form action="" method="post">
         <?php
-            wp_nonce_field("amp-cache-update", "amp-cache-update");
+            wp_nonce_field(PLUGIN_FOLDER, PLUGIN_FOLDER);
         ?>
         <div class="amp-row">
             <label class="title" for="amp_c_u_private_pem"><b>Private key</b> giriniz</label>

@@ -1,6 +1,7 @@
 <?php
     $pemKey = get_option("amp_c_u_private_pem");
     //$cdn_url = get_option("amp_w_cdn_url");
+
 ?>
 
 <div class="amp-cache-update">
