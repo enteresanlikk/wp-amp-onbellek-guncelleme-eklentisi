@@ -1,0 +1,89 @@
+#wpcontent {
+    padding: 20px;
+}
+
+#toplevel_page_amp-cache-update-pages-index .wp-menu-image img {
+    padding: 6px 0 0 0;
+}
+
+#amp_cache_update_meta_box_post .inside {
+    padding: 0 10px;
+}
+
+.amp-cache-update * {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.amp-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.amp-row .title {
+    padding: 10px 0;
+}
+
+.amp-row .textarea {
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
+    min-height: 300px;
+    border: 0;
+}
+
+.amp-row .input {
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    border: 0;
+}
+
+.amp-cache-update .container {
+    padding: 10px;
+}
+
+.ampcu-btn {
+    background: #0085ba;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: 8px 10px;
+}
+
+.ampcu-btn:disabled {
+    background: #aaaaaa;
+    color: #222222;
+    cursor: no-drop;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-d-column {
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.center-items {
+    align-items: center;
+}
+
+#message .notice {
+    margin: 0;
+    padding: 2px 10px;
+    max-width: 600px;
+}
+#message .notice p {
+    margin: 4px;
+}
+
+#side-sortables .flex {
+    display: inline !important;
+}
