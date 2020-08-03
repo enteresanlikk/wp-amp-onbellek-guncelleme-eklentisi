@@ -1,6 +1,6 @@
 # Wordpress için AMP Önbellek Güncelleme Eklentisi
 <p align="center" style="margin: 50px 0;">
-    <img src="https://blog.atakancelik.com.tr/wp-content/uploads/2019/08/AMP-Cache-Update-Kopyası-Kopyası.png" />
+    <img src="https://blog.atakancelik.com.tr/wp-content/uploads/2020/08/amp.png" />
 </p>
 
 > Wordpress için geliştirilmiş Google AMP Önbellek Güncelleme eklentisi
